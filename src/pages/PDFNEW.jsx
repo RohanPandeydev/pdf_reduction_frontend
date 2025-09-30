@@ -32,8 +32,8 @@ const PDFRedactionApp = () => {
   const [pagination, setPagination] = useState(null);
   const fileInputRef = useRef(null);
 
-  const API_BASE = "http://localhost:5000";
-
+  const API_BASE =
+    "http://ec2-13-51-109-182.eu-north-1.compute.amazonaws.com:5000";
   const showNotification = (message, type = "success") => {
     setNotification({ message, type });
     setTimeout(() => setNotification(null), 5000);
